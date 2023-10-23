@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Job Search Recommendation" />
+    <meta name="author" content="Andy Dai" />
+    <title>Job Recommendation &copy; Andy 2023</title>
+    <link rel="icon" href="assets/favicon.ico" />
+    <style>
+        th, td {
+          border: 1px solid #000;
+        }
+    </style>
+    <script></script>
+</head>
+<body>
+    <nav></nav>
+    <!-- Masthead-->
+    <header>
+        <figure>
+            <img src="./assets/img/job_search.png" alt="Job Search Logo" />
+            <figcaption><i>Start Early in Your Job Hunting!</i></figcaption>
+        </figure>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#prepare">Prepare</a>
+        </nav>
+        <hr/>
+        <details>
+            <summary>What's the secret to get a job?</summary>
+            Start early and make yourself a perfect match.
+        </details>
+    </header>
+    <main>
+        <section>
+            <h1>Unlock unparalleled <strong>career opportunities</strong> with our advanced system.</h1>
+            <h2 id="text">Start Your Job Hunting! Upload your resume now to unleash the full potential of your professional journey.</h2>
+            <br />
+            <!-- Upload Form -->
+            <form id="uploadForm">
+                <h3>How to upload? </h3>
+                <fieldset>
+                    <legend>Upload your resume <b>here</b></legend>
+                    <input type="file" id="fileInput" accept=".pdf" />
+                </fieldset>   
+                <button id="submitButton" type="submit">Upload</button>   
+            </form>
+            <!-- Submit success message -->
+            <p>Resume submitted successfully!</p>
+        </section>
+        <!-- Background Video-->
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="assets/mp4/bg.mp4" type="video/mp4" />
+        </video>
+        <audio controls src="assets/mp4/bg.mp4">
+            <a href="assets/mp4/bg.mp4">Download audio</a>
+        </audio>
+        <aside>
+            <div>
+                <iframe
+                    id="inlineFrameUCSD"
+                    title="UCSD"
+                    width="1200"
+                    height="800"
+                    src="https://ucsd.edu">
+                </iframe>
+                <picture>
+                    <img src="assets/img/Instagram.jpg" alt="Instagram LOGO" />
+                </picture>
+                <a href="https://www.instagram.com"><span>&#10555;</span></a>
+            </div>
+        </aside>
+        <form>
+            <p>Do not want to upload? 
+                <template>
+                    <div>Emmm...</div>
+                </template>
+            </p>
+            <label for="industry">Select your industry</label>
+            <select id="industry">
+            <optgroup label="Technology">
+                <option>Hardware</option>
+                <option>Software</option>
+            </optgroup>
+            <optgroup label="Finance">
+                <option>Banks</option>
+                <option>Trading Firms</option>
+                <option>Consulting</option>
+            </optgroup>
+            </select>
+
+            <fieldset>
+                <legend>Choose your preferred Job type</legend>
+            
+                <input type="radio" id="sde"/>
+                <label for="sde">Software Development Engineer</label><br />
+            
+                <input type="radio" id="mle"/>
+                <label for="mle">Machine Learning Engineer</label><br />
+            
+                <input type="radio" id="hrd"/>
+                <label for="hrd">Hardware Engineer</label><br />
+    
+                <input type="radio" id="others"/>
+                <label for="others">Others</label>
+                </fieldset>
+            <button id="choiceButton" type="submit">Done</button> 
+        </form>
+        <hr />
+        <svg width="200" height="100" xmlns="http://www.w3.org/2000/svg">
+            <rect width="180" height="80" x="10" y="10" fill="blue" />
+        </svg>
+        <hr/>
+        <label id="prepare">Steps to get a job:</label>
+        <ol>
+            <li>Prepare a resume</li>
+            <li>Get our recommendations</li>
+            <li>Apply</li>
+            <li>Pass the interview</li>
+            <li>Buy me a cup of coffee as a thank you after you get an offer</li>
+        </ol><br/>
+        <label>Sample jobs:</label>
+        <ul>
+            <li>Computer Science
+                <ul>
+                    <li>SDE</li>
+                    <li>MLE</li>
+                    <li>...</li>
+                </ul>
+            </li>
+            <li>Finance
+                <ul>
+                    <li>Business analysis</li>
+                    <li>Consulting</li>
+                    <li>...</li>
+                </ul>
+            </li>
+        </ul>
+
+        <table>
+            <caption>
+              Jobs' Skills Set
+            </caption>
+            <colgroup>
+              <col />
+              <col span="3"/>
+            </colgroup>
+            <tr>
+              <th></th>
+              <th scope="col">SDE</th>
+              <th scope="col">MLE</th>
+              <th scope="col">Dev</th>
+            </tr>
+            <tr>
+              <th scope="row">Skills</th>
+              <td>C++, Java</td>
+              <td>Machine Learning</td>
+              <td>AWS, GCP</td>
+            </tr>
+        </table>
+        <hr/>
+        <canvas id="myCanvas" width="200" height="100"></canvas>
+        <script>
+            var canvas = document.getElementById("myCanvas");
+            var context = canvas.getContext("2d");
+            context.fillStyle = "green"; 
+            context.fillRect(10, 10, 180, 80); 
+        </script><br/>
+        <label for="feedback">How's your experience?</label>
+        <input list="user-feedback" id="feedback" name="feedback" />
+
+        <datalist id="user-feedback">
+            <option value="Fantastic"></option>
+            <option value="Excellent"></option>
+            <option value="Good"></option>
+            <option value="Bad"></option>
+            <option value="Awful"></option>
+        </datalist><br/>
+        <label for="experience">Tell us your experience in details:</label><br/>
+        <textarea id="experience" name="experience" rows="5" cols="45">  </textarea>
+    </main>
+    <hr />
+    <footer>
+        Made with &hearts;in <code>html</code> by <em>Andy Dai</em>
+        <pre>
+             &hearts;      &hearts;
+        &hearts;    &hearts;    &hearts;     &hearts;  
+          &hearts;            &hearts;
+           &hearts;         &hearts;
+             &hearts;     &hearts;
+               &hearts; &hearts;
+                &hearts;
+        </pre>
+    </footer>
+</body>
+</html>
