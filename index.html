@@ -36,14 +36,18 @@
         </figure>
         <nav>
             <a href="#">Home</a>
-            <a href="#">About</a>
+            <a href="#about">About</a>
             <a href="#prepare">Prepare</a>
+            <a href="#advice">Advice</a>
         </nav>
+        <hr/>
+        <p id="about">A Free Job Recommendation System made by Andy.</p>
         <hr/>
         <details>
             <summary>What's the secret to get a job?</summary>
             Start early and make yourself a perfect match.
         </details>
+
     </header>
     <main>
         <section>
@@ -181,7 +185,7 @@
             context.fillStyle = "green"; 
             context.fillRect(10, 10, 180, 80); 
         </script><br/>
-        <label for="feedback">How's your experience?</label>
+        <label id="advice" for="feedback">How's your experience?</label>
         <input list="user-feedback" id="feedback" name="feedback" />
 
         <datalist id="user-feedback">
